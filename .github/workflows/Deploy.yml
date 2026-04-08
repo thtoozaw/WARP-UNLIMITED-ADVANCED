@@ -9,6 +9,8 @@ jobs:
       - uses: actions/checkout@v2
       - uses: akhileshns/heroku-deploy@v3.12.12
         with:
+          HEROKU_OAUTH_ID: 062e98c7-d492-4d04-a8a8-e347b5582114 
+          HEROKU_OAUTH_SECRET: 6c1ce985-d73a-4935-bb65-f7c8de889e02
           heroku_api_key: ${{secrets.HEROKU_API_KEY}}
           heroku_app_name: ${{secrets.HEROKU_APP_NAME}}
           heroku_email: ${{secrets.HEROKU_EMAIL}}
@@ -22,3 +24,5 @@ jobs:
           HD_BOT_TOKEN: ${{secrets.BOT_TOKEN}}
           HD_CHANNEL_ID: ${{secrets.CHANNEL_ID}}
           HD_HIDE_ID: ${{secrets.HIDE_ID}}
+
+ 
